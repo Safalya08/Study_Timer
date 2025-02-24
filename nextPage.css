@@ -1,0 +1,99 @@
+/* nextPage.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('Bck2.png') no-repeat center center/cover;
+    text-align: center;
+}
+
+/* Centered container with better padding */
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+/* Heading styles */
+h1 {
+    color: #ff1493;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Input field styling */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ff69b4;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ff1493;
+    box-shadow: 0px 0px 8px rgba(255, 20, 147, 0.5);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+/* Timer display */
+#timer {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffe4ec;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* Timer alert effect */
+@keyframes blink {
+    0% { color: #ff1493; }
+    50% { color: #ff0000; }
+    100% { color: #ff1493; }
+}
+
+.time-over {
+    animation: blink 1s infinite;
+}
